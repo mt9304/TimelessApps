@@ -6,12 +6,19 @@
     <%= render 'layouts/shim' %>
   </head>
   <body>
+    
+    <div class="container ta-container">
+      <div class="ta-transparent">
+        <%= render 'layouts/header' %>
 
-    <%= render 'layouts/header' %>
-
-    <div class="container">
-      <%= yield %>
-      <%= render 'layouts/footer' %>
+        <div class="container">
+          <%= yield %>
+          
+        </div>
+      </div>
     </div>
+
+    <%= render 'layouts/footer' %>
+
   </body>
 </html>
