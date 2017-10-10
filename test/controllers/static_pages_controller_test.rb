@@ -34,4 +34,10 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
 		assert_response :success
 		assert_select "title", "Contact | #{@base_title}"
 	end
+
+	test "should get blankpage" do
+		get blankpage_path
+		assert_response :success
+		assert_select "title", "Blank Page | #{@base_title}"
+	end
 end
