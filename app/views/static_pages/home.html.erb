@@ -1,23 +1,178 @@
-<% provide(:title, "Home") %>
+<% provide(:title,"Home") %>
 <!DOCTYPE html>
 <html>
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay" style="background-image:url('images/demo/backgrounds/01.png');">   <div class="wrapper row1">
+    <%= render 'layouts/header' %>
+  </div>
 
-<div class="center ta-bg">
-	<div class="ta-transparenta">
-	<h1>Welcome</h1>
+  <div id="pageintro" class="hoc clear"> 
+    <article>
+      <h2 class="heading">Condimentum pellentesque</h2>
+      <p>integer condimentum sed nisl sed dictum vestibulum fringilla elementum mauris quis sagittis integer ornare feugiat lectus quis dictum vestibulum ante ipsum primis.</p>
+      <footer>
+        <ul class="nospace inline pushright">
+          <li><a class="btn" href="#">Faucibus orci</a></li>
+          <li><a class="btn inverse" href="#">Ultrices posuere</a></li>
+        </ul>
+      </footer>
+    </article>
 
-	<h2>
-		This is the home page for the
-		<a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-		sample application.
-	</h2>
+  </div>
 
-	<%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
-	</div>
+</div>
+<!-- End Top Background Image Wrapper -->
+
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <div class="center btmspace-50">
+      <h3 class="font-x2 nospace">Cubilia curae proin ligula</h3>
+      <p class="nospace">Leo dui a tincidunt euismod tellus vivamus facilisis lectus cursus <a href="#">laoreet auctor</a>.</p>
+    </div>
+    <ul class="nospace group services">
+      <li class="one_third first">
+        <article><a href="#"><i class="fa fa-paperclip"></i></a>
+          <h6 class="heading">Duis dapibus lacus</h6>
+          <p>Eu sem dignissim sed placerat ex rutrum phasellus at rhoncus quam mauris sit amet libero&hellip;</p>
+          <footer><a href="#">View Details &raquo;</a></footer>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a href="#"><i class="fa fa-calculator"></i></a>
+          <h6 class="heading">Ullamcorper ornare</h6>
+          <p>Rhoncus nullam at varius augue nam fringilla nunc ac orci ornare posuere suspendisse dictum lacus&hellip;</p>
+          <footer><a href="#">View Details &raquo;</a></footer>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a href="#"><i class="fa fa-pie-chart"></i></a>
+          <h6 class="heading">Posuere fusce sit</h6>
+          <p>Amet odio sit amet augue pharetra pulvinar at quis justo in lacinia pretium posuere nunc&hellip;</p>
+          <footer><a href="#">View Details &raquo;</a></footer>
+        </article>
+      </li>
+      <li class="one_third first">
+        <article><a href="#"><i class="fa fa-recycle"></i></a>
+          <h6 class="heading">Tempus vel risus</h6>
+          <p>Mollis lobortis sapien nullam elementum dignissim eleifend nunc lobortis aliquet curabitur&hellip;</p>
+          <footer><a href="#">View Details &raquo;</a></footer>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a href="#"><i class="fa fa-code-fork"></i></a>
+          <h6 class="heading">Nec ultrices ipsum</h6>
+          <p>Maximus ut in semper nibh at mattis condimentum odio dui neque sit amet vulputate arcu vitae nibh&hellip;</p>
+          <footer><a href="#">View Details &raquo;</a></footer>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a href="#"><i class="fa fa-cogs"></i></a>
+          <h6 class="heading">Fringilla viverra</h6>
+          <p>Rutrum in gravida efficitur diam vel porta odio cursus eu aliquam amet nunc interdum malesuada&hellip;</p>
+          <footer><a href="#">View Details &raquo;</a></footer>
+        </article>
+      </li>
+    </ul>
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
 </div>
 
-
- <!-- <%= link_to image_tag("bg-laptop.jpg", alt: "laptop picture"),
-'http://rubyonrails.org/' %> -->
-
+<div class="wrapper">
+  <div class="split clear" style="background-image:url('images/demo/backgrounds/02.png');">
+    <section class="box"> 
+      <!-- ################################################################################################ -->
+      <div class="btmspace-50">
+        <p class="nospace"><a href="#">Ipsum primis in faucibus</a></p>
+        <h2 class="heading">Quisque venenatis eleifend</h2>
+      </div>
+      <div class="testimonial">
+        <figure class="clear"><img src="images/demo/60x60.png" alt="">
+          <figcaption><strong>A.Doe</strong><br>
+            <em>Position, Company Name</em></figcaption>
+        </figure>
+        <blockquote>Enim eget aliquam ex porta in donec in turpis mollis ultricies risus quis varius velit aenean pretium consectetur finibus maecenas magna arcu consectetur sit amet nisi quis consectetur faucibus augue morbi iaculis elit vel dui viverra porta mauris.</blockquote>
+      </div>
+      <!-- ################################################################################################ -->
+    </section>
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <div class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <div class="center btmspace-50">
+      <h3 class="font-x2 nospace">Vitae diam pellentesque</h3>
+      <p class="nospace">Fermentum nulla cursus porttitor imperdiet suspendisse vel diam dui mauris <a href="#">faucibus sed</a>.</p>
+    </div>
+    <ul class="nospace group elements">
+      <li class="one_third first">
+        <figure><img src="images/demo/320x240.png" alt="">
+          <figcaption><a href="#">Gravida</a></figcaption>
+        </figure>
+      </li>
+      <li class="one_third">
+        <figure><img src="images/demo/320x240.png" alt="">
+          <figcaption><a href="#">Elementum</a></figcaption>
+        </figure>
+      </li>
+      <li class="one_third">
+        <figure><img src="images/demo/320x240.png" alt="">
+          <figcaption><a href="#">Vehicula</a></figcaption>
+        </figure>
+      </li>
+      <li class="one_third first">
+        <figure><img src="images/demo/320x240.png" alt="">
+          <figcaption><a href="#">Scelerisque</a></figcaption>
+        </figure>
+      </li>
+      <li class="one_third">
+        <figure><img src="images/demo/320x240.png" alt="">
+          <figcaption><a href="#">Pharetra</a></figcaption>
+        </figure>
+      </li>
+      <li class="one_third">
+        <figure><img src="images/demo/320x240.png" alt="">
+          <figcaption><a href="#">Ullamcorper</a></figcaption>
+        </figure>
+      </li>
+    </ul>
+    <!-- ################################################################################################ -->
+    <div class="clear"></div>
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper coloured">
+  <div id="social" class="hoc clear"> 
+    <div class="one_half first">
+      <h6 class="title">Social Media</h6>
+      <ul class="faico clear">
+        <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a class="faicon-pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
+        <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
+        <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+        <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+        <li><a class="faicon-youtube" href="#"><i class="fa fa-youtube"></i></a></li>
+        <li><a class="faicon-rss" href="#"><i class="fa fa-rss"></i></a></li>
+      </ul>
+    </div>
+    <div class="one_half">
+      <h6 class="title">Newsletter sign-up</h6>
+      <form class="clear" method="post" action="#">
+        <fieldset>
+          <legend>Newsletter:</legend>
+          <input type="text" value="" placeholder="Type Email Here&hellip;">
+          <button class="fa fa-share" type="submit" title="Submit"><em>Submit</em></button>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div>
 </html>
