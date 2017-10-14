@@ -1,50 +1,18 @@
-/*
-html
+/* Fixing things from layout */
+
+/*Home Staic Page */
+.ta-padding-left
 {
-	
+	padding-left: 25px;
 }
 
-body
+.ta-padding-right
 {
-	
+	padding-right: 25px;
 }
 
-.container
+#footer
 {
-	
+	padding-left: 25px;
 }
 
-.ta-container
-{
-	background-image: url("bg-laptop.jpg");
-	width: 100vh;
-	height: 100vh;
-	padding: 0,0,0,0;
-	margin: 0,0,0,0;
-}
-
-.ta-bg
-{
-
-}
-
-.ta-transparent
-{
-	background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.ta-bg h1, .ta-bg h2
-{
-	color: white;
-}
-
-.footer
-{
-
-}
-*/
