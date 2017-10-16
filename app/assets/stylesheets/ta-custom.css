@@ -32,3 +32,16 @@
 {
 	padding-bottom: 10px;
 }
+
+.ta-justify
+{
+	text-align: justify;
+}
+
+.ta-justify:after 
+{
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
