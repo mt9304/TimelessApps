@@ -45,3 +45,9 @@
   width: 100%;
 }
 
+.ta-cursor
+{
+	/* For different browsers */
+	cursor: pointer;
+	cursor: hand;
+}
