@@ -98,8 +98,18 @@
 	padding-right: 15px;
 }
 
-/* Font */
+/* Font and Colors */
 .ta-fc-white
 {
 	color: white;
+}
+
+.ta-bg-white
+{
+	background-color: white;
+}
+
+.ta-fc-grey
+{
+	color: #484848;
 }
