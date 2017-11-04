@@ -2,24 +2,36 @@
 
 <h1>Projects</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Project name</th>
-      <th>Age</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+    <div class="container">
+      <ul class="progressbar">
+        <li class="active" id="step1">Step 1</li>
+        <li id="step2">Step 2</li>
+        <li id="step3">Step 3</li>
+        <li id="step4">Step 4</li>
+        <li id="step5">Step 5</li>
+      </ul>
+    </div>
 
-  <tbody>
-    
+<div class="ta-wrap">
+  <table>
+    <thead>
       <tr>
-        <td><%= @projects.project_name %></td>
+        <th>Project name</th>
+        <th>Age</th>
+        <th colspan="3"></th>
       </tr>
-    
+    </thead>
 
-  </tbody>
-</table>
+    <tbody>
+      
+        <tr>
+          <td><%= @projects.project_name %></td>
+        </tr>
+      
+
+    </tbody>
+  </table>
+</div>
 
 <br>
 
