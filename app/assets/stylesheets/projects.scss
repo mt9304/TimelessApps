@@ -16,10 +16,13 @@
   position: relative;
   text-align: center;
   cursor: pointer;
+  left: 0px;
+  right: 0px;
 }
 .progressbar li:before {
   content: counter(step);
   counter-increment: step;
+  color: #484848;
   width: 30px;
   height: 30px;
   line-height : 30px;
@@ -45,11 +48,83 @@
   content: none;
 }
 .progressbar li.active {
-  color: green;
+  color: CornflowerBlue;
 }
 .progressbar li.active:before {
-  border-color: green;
+  border-color: CornflowerBlue;
+  background-color: CornflowerBlue;
+  color: white;
 } 
 .progressbar li.active + li:after {
-  background-color: green;
+  background-color: CornflowerBlue;
+}
+
+.ta-wrap
+{
+	text-align: center;
+	margin-top: -75px;
+}
+
+.ta-bar
+{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* For Headers above projects table. */
+
+/* For the projects table. */
+.ta-proj
+{
+	margin-top: 50px;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ul
+{
+	padding-left: 0px;
+}
+
+tr :first-child
+{
+	text-align: left;
+}
+
+tr :nth-child(2)
+{
+	text-align: right;
+}
+
+th, td
+{
+	border: none;
+	border-bottom: 1px solid #d3d3d3; 
+}
+
+tbody
+{
+	color: #484848;
+}
+
+#ta-status
+{
+	float: right;
+}
+
+.ta-proj-header
+{
+	width: 70%;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ta-wrap-all
+{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 }

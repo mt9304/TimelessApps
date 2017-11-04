@@ -73,12 +73,20 @@
 	color: white;
 	padding-left: 10px;
 	padding-right: 10px;
+	border-radius: 2px;
+	border: none;
+}
+
+.ta-btn-small:hover
+{
+	background-color: #5077bd
 }
 
 .ta-search-bar
 {
 	flex: 1;
 	width: 150px;
+	border-radius: 2px;
 }
 
 .ta-space
@@ -112,4 +120,11 @@
 .ta-fc-grey
 {
 	color: #484848;
+}
+
+
+/* Margin*/
+.ta-marg-top
+{
+	margin-top: 50px;
 }

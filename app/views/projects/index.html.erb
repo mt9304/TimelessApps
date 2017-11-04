@@ -1,47 +1,70 @@
 <p id="notice"><%= notice %></p>
+<div class="ta-wrap-all">
 
-<h1>Projects</h1>
-
-    <div class="container">
-      <ul class="progressbar">
-        <li class="active" id="step1">Step 1</li>
-        <li id="step2">Step 2</li>
-        <li id="step3">Step 3</li>
-        <li id="step4">Step 4</li>
-        <li id="step5">Step 5</li>
-      </ul>
+<div class="ta-marg-top">
+    <div class="center btmspace-50">
+      <h3 class="font-x2 nospace ta-fc-white">Check your progress</h3>
+      <p class="nospace ta-fc-white">We keep track of the progress of all of our projects. Simply enter your project ID and search to check the progress. </p>
     </div>
-
-<div class="ta-wrap">
-  <table>
-    <thead>
-      <tr>
-        <th>Project name</th>
-        <th>Age</th>
-        <th colspan="3"></th>
-      </tr>
-    </thead>
-
-    <tbody>
-      
-        <tr>
-          <td><%= @projects.project_name %></td>
-        </tr>
-      
-
-    </tbody>
-  </table>
+  <form action="<%= projects_path %>" class="ta-center ta-search-space" method="get">
+    <%= text_field_tag :search, nil, placeholder: "Enter Project ID", class: "ta-search-bar ta-center ta-fc-grey" %>
+    <div class="ta-space"></div>
+    <%= submit_tag 'Search', name: nil, class: "ta-btn-small"%>
+  </form>
 </div>
 
-<br>
-
-<form action="<%= projects_path %>" method="get">
-  <%= text_field_tag :search %>
-  <%= submit_tag 'Search', name: nil%>
-</form>
-
-
-
-<br>
-
+<!--
 <%= link_to 'New Project', new_project_path %>
+-->
+
+  <div class="ta-proj-header ta-fc-white">
+    <h1><%= @projects.project_name %>
+    </h1>
+    <span id="ta-status">
+      <%= @projects.status %>
+    </span>
+    <p>
+      <%= @projects.description %>
+    </p>
+  </div>
+  <div class="container ta-wrap">
+    <div class="ta-bar">
+        <ul class="progressbar">
+          <li class="active" id="p0 step1"></li>
+          <li class="active" id="p25 step2"></li>
+          <li id="p50 step3"></li>
+          <li id="p75 step4"></li>
+          <li id="p100 step5"></li>
+        </ul>
+    </div>
+
+    <table class="ta-proj">
+      <thead>
+        <tr>
+          <th>Status</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+
+      <tbody>
+          <tr>
+            <td>Estimated Completion Date</td>
+            <td><%= @projects.eta %></td>
+          </tr>
+          <tr>
+            <td>Date Started</td>
+            <td><%= @projects.date_started %></td>
+          </tr>
+          </tr>
+            <tr>
+            <td>Last Updated</td>
+            <td><%= @projects.last_updated %></td>
+          </tr>
+          <tr>
+            <td>Status</td>
+            <td><%= @projects.status %></td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
