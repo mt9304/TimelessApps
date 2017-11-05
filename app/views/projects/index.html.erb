@@ -3,8 +3,7 @@
 
 <div class="ta-marg-top">
     <div class="center btmspace-50">
-      <h3 class="font-x2 nospace ta-fc-white">Check your progress</h3>
-      <p class="nospace ta-fc-white">We keep track of the progress of all of our projects. Simply enter your project ID and search to check the progress. </p>
+      <h3 class="font-x2 nospace ta-fc-white">Check Your Project's Progress</h3>
     </div>
   <form action="<%= projects_path %>" class="ta-center ta-search-space" method="get">
     <%= text_field_tag :search, nil, placeholder: "Enter Project ID", class: "ta-search-bar ta-center ta-fc-grey" %>
@@ -40,31 +39,28 @@
 
     <table class="ta-proj">
       <thead>
-        <tr>
+        <tr class="ta-table-header">
           <th>Details</th>
-          <th></th>
+          <th>></th>
         </tr>
       </thead>
 
-      <tbody>
-          <tr>
-            <td>Estimated Completion Date</td>
-            <td><%= @projects.eta %></td>
-          </tr>
-          <tr>
-            <td>Date Started</td>
-            <td><%= @projects.date_started %></td>
-          </tr>
-          </tr>
+      <div class="ta-slide-down">
+        <tbody>
             <tr>
-            <td>Last Updated</td>
-            <td><%= @projects.last_updated %></td>
-          </tr>
-          <tr>
-            <td>Status</td>
-            <td><%= @projects.status %></td>
-          </tr>
-      </tbody>
+              <td>Estimated Completion Date</td>
+              <td><%= @projects.eta %></td>
+            </tr>
+            <tr>
+              <td>Date Started</td>
+              <td><%= @projects.date_started %></td>
+            </tr>
+            <tr>
+              <td>Status</td>
+              <td><%= @projects.status %></td>
+            </tr>
+        </tbody>
+      </div>
     </table>
   </div>
 </div>

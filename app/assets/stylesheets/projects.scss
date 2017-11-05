@@ -128,3 +128,14 @@ tbody
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.ta-table-header:hover
+{
+  cursor: pointer;
+  cursor: hand;
+}
+
+.ta-slide-down
+{
+  visibility: hidden;
+}
