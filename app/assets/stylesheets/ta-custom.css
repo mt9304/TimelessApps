@@ -85,14 +85,46 @@
 .ta-search-bar
 {
 	flex: 1;
-	width: 150px;
 	border-radius: 2px;
+	height: 35px;
+	border: 1px solid CornflowerBlue;
+	overflow: hidden;
+}
+
+.ta-search-bar:focus
+{
+	border: 2px solid CornflowerBlue;
 }
 
 .ta-space
 {
 	width: 5px;
 	min-width: 5px;
+}
+
+.ta-search-space
+{
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  left: 50%;
+}
+
+.ta-mid-scale
+{
+  margin-right: auto;
+  margin-left: auto;
+  display: inline;
+}
+
+.ta-search-component
+{
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  margin-top: 5px;
 }
 
 /* Copyright Area */
@@ -128,3 +160,4 @@
 {
 	margin-top: 50px;
 }
+
