@@ -128,3 +128,16 @@
 {
 	margin-top: 50px;
 }
+
+/* Progress bar and tables */
+.ta-mid-scale
+{
+  margin-right: auto;
+  margin-left: auto;
+  display: inline;
+}
+
+.wrapper
+{
+  overflow: auto;
+}
