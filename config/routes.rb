@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get '/about', to: 'static_pages#about'
   get '/contact', to: 'static_pages#contact'
   get '/signup', to: 'users#new'
+  get '/pricing', to: 'static_pages#pricing'
   get '/blankpage', to: 'static_pages#blankpage'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
