@@ -55,8 +55,8 @@
 /* Search Area */
 .ta-search-space
 {
+	max-width: 500px;
 	display: flex;
-	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 16px;
