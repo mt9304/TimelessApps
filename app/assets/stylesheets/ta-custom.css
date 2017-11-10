@@ -79,7 +79,9 @@
 
 .ta-btn-small:hover
 {
-	background-color: #5077bd
+	background-color: #5077bd;
+	cursor: hand;
+	cursor: pointer;
 }
 
 .ta-search-bar
