@@ -1,22 +1,24 @@
-<header id="header" class="hoc clear ta-pad-left ta-fc-white ta-underline"> 
-  <div id="logo" class="fl_left">
-    <h1><%= link_to "Timeless Apps", root_path %></h1>
-  </div>
-  <nav id="mainav" class="fl_right">
-    <ul class="clear ta-pad-right">
-      <li class="active"><%= link_to "Home", root_path %></li>
+<div>
+  <header id="header" class="hoc clear ta-pad-left ta-fc-white ta-underline"> 
+    <div id="logo" class="fl_left">
+      <h1><%= link_to "Timeless Apps", root_path %></h1>
+    </div>
+    <nav id="mainav" class="fl_right">
+      <ul class="clear ta-pad-right">
+        <li class="active"><%= link_to "Home", root_path %></li>
 
-      <li><%= link_to "About", about_path, :class => "drop" %></a>
-        <ul>
-          <li><a href="pages/gallery.html">Contact</a></li>
-          <li><a href="pages/full-width.html">Resources</a></li>
-          <li><a href="pages/sidebar-left.html">Careers</a></li>
-        </ul>
-      </li>
+        <li><%= link_to "About", about_path, :class => "drop" %></a>
+          <ul>
+            <li><a href="pages/gallery.html">Contact</a></li>
+            <li><a href="pages/full-width.html">Resources</a></li>
+            <li><a href="pages/sidebar-left.html">Careers</a></li>
+          </ul>
+        </li>
 
-      <li><%= link_to "Pricing", pricing_path %></a>
+        <li><%= link_to "Pricing", pricing_path %></li>
 
-      <li><%= link_to "Check Progress", projects_path %></a>
-    </ul>
-  </nav>
-</header>
+        <li><%= link_to "Check Progress", projects_path %></li>
+      </ul>
+    </nav>
+  </header>
+</div>

@@ -16,13 +16,14 @@ Licence URI: http://www.os-templates.com/template-terms
 <%= render 'layouts/google-analytics' %>
 </head>
 <body id="top">
-  <%= render 'layouts/header' %>
-  <!-- The line under header -->
-  <div class="wrapper row1">
-  </div>
+  <div id="ta-home-bg" style="background-image: url('/assets/bg2.jpg');" >
+    <%= render 'layouts/header' %>
+    <!-- The line under header -->
+    <div class="wrapper row1">
+    </div>
 
 <%= yield %>
-
+  </div>
 <div class="wrapper row4">
   <%= render 'layouts/footer' %>
 </div>
