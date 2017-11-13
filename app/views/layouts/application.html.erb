@@ -16,7 +16,7 @@ Licence URI: http://www.os-templates.com/template-terms
 <%= render 'layouts/google-analytics' %>
 </head>
 <body id="top">
-  <div id="ta-home-bg" style="background-image: url('/assets/bg2.jpg');" >
+  <div id="ta-home-bg" style="background-image: url(<%= yield(:bg_image) %>);" >
     <%= render 'layouts/header' %>
     <!-- The line under header -->
     <div class="wrapper row1">

@@ -1,10 +1,10 @@
 <% provide(:title,"Home") %>
-<% provide(:bg_image,"bg2.jpg") %>
+<% provide(:bg_image,"/assets/bg2.jpg") %>
 <!DOCTYPE html>
 <html>
 <!-- Top Background Image Wrapper -->
 
-<div class="bgded overlay" style="background-image:url('/assets/bg-test1.png');">   
+<div class="bgded overlay">   
   
 </div>
 <div class="ta-screen-height">
@@ -14,8 +14,8 @@
       <p class="ta-maxwidth-50">We create stunning websites and applications that drive success into your business. Our price ranges provide smaller businesses easier access to technical solutions. </p>
       <footer>
         <ul class="nospace inline pushright">
-          <li><a class="btn" href="#">View Prices</a></li>
-          <li><a class="btn inverse" href="#">Learn More</a></li>
+          <li><%= link_to "View Prices", pricing_path, :class => "btn" %></li>
+          <li><%= link_to "Learn More", about_path, :class => "btn inverse" %></li>
         </ul>
       </footer>
     </article>
