@@ -29,25 +29,25 @@
   <div class="container ta-wrap ta-mid-scale">
     <div class="ta-bar">
         <ul class="progressbar">
-          <% if @projects.progress >= 0 %>
+          <% if @projects.progress > 0 %>
             <li class="active" id="p0 step1"></li>
           <% else %>
             <li id="p0 step1"></li>
           <% end %>
 
-          <% if @projects.progress >= 25 %>
+          <% if @projects.progress > 25 %>
             <li class="active" id="p25 step2"></li>
           <% else %>
             <li id="p25 step2"></li>
           <% end %>
 
-          <% if @projects.progress >= 50 %>
+          <% if @projects.progress > 50 %>
             <li class="active" id="p50 step3"></li>
           <% else %>
             <li id="p50 step3"></li>
           <% end %>
 
-          <% if @projects.progress >= 75 %>
+          <% if @projects.progress > 75 %>
             <li class="active" id="p75 step4"></li>
           <% else %>
             <li id="p75 step5"></li>
