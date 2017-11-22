@@ -11,10 +11,10 @@ Project.create(
 	project_name: 'Project ID', 
 	description: ' ', 
 	progress: 0, 
-	last_updated: '2017-01-01 00:00:00', 
+	last_updated: '', 
 	progress_description: ' ', 
-	date_started: '2017-01-01 00:00:00', 
-	eta: '2017-01-01', 
+	date_started: '', 
+	eta: '', 
 	project_type: ' ', 
 	status: ' ', 
 	approved: 0)
@@ -26,7 +26,7 @@ Project.create(
 	last_updated: '2017-10-29 20:30:45', 
 	progress_description: 'Filling out initial paperwork. ', 
 	date_started: '2017-10-29 20:30:45', 
-	eta: '0000-00-00', 
+	eta: '2017-11-29', 
 	project_type: 'Landing Page', 
 	status: 'Not Started', 
 	approved: 0)
@@ -78,3 +78,15 @@ Project.create(
 	project_type: 'Web Application', 
 	status: 'Completed', 
 	approved: 1)
+
+Project.create(
+	project_name: 'Project Not Found', 
+	description: 'Sorry, it looks like this project does not exist in our records. If this is a mistake, or you have forgotten your Project ID, please contact support@timelessapps.com for assistance. ', 
+	progress: 0, 
+	last_updated: '', 
+	progress_description: ' ', 
+	date_started: '', 
+	eta: '', 
+	project_type: ' ', 
+	status: ' ', 
+	approved: 0)

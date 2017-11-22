@@ -7,7 +7,7 @@ class Project < ApplicationRecord
 		if search && where('project_name' => "#{search}").first.present?
 			where('project_name' => "#{search}").first
 		elsif search && where('project_name' => "#{search}").first.blank?
-			where('project_name' => 'MT001').first
+			where('project_name' => 'Project Not Found').first
 		else
 			where('project_name' => 'Project ID').first
 		end
