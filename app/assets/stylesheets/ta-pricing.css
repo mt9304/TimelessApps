@@ -109,3 +109,25 @@ body {
 		padding: 10px;
 		text-decoration: none;
 	}
+
+	.pricing-table-footer a:hover{
+				background: #50b7e4; /* Old browsers */
+		background: -moz-linear-gradient(top,  #3098c4 0%, #3098c4 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3098c4), color-stop(100%,#3098c4)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #3098c4 0%,#3098c4 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #3098c4 0%,#3098c4 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #3098c4 0%,#3098c4 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #3098c4 0%,#3098c4 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3098c4', endColorstr='#3098c4',GradientType=0 ); /* IE6-9 */
+		background-color: #3ea6d2;
+		border: 1px solid #1481b0;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		color: #fff;
+		display: inline-block;
+		font-weight: bold;
+		margin-top: 10px;
+		padding: 10px;
+		text-decoration: none;
+	}

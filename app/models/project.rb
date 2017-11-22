@@ -10,7 +10,7 @@ class Project < ApplicationRecord
 
 		#if search && where('project_name' => "#{search}").first.to_s.split("").count > 0 #Old way as quick proof of concept since I did not know there was a built-in function for checking if present. 
 		#Checks if project exists in database. elsif not found, gives not found. else display the default project template. 
-
+		#Remember to chance rocket and hash thing to be consistent after figuring out which is better. 
 		if search && where('project_name' => "#{search}").first.present?
 			where(project_name: "#{search}").first
 		elsif search && where('project_name' => "#{search}").first.blank?
