@@ -266,7 +266,7 @@ input:focus, textarea:focus, *:required:focus{border-color:CornflowerBlue;}
 .overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
 
 .btn, .btn.inverse:hover{color:#FFFFFF; background-color:CornflowerBlue; border-color:CornflowerBlue;}
-.btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;}
+.btn:hover, .btn.inverse{color:#b1caf6; background-color:#0c457d; border-color:#0c457d;}
 
 
 /* Rows */
