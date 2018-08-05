@@ -1,4 +1,5 @@
 class Project < ApplicationRecord
+	belongs_to :user
 	validates :project_name, uniqueness: true
 
 	def self.search(search)
