@@ -7,6 +7,17 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 #The default values that show on search page. 
+Role.create(name: 'admin')
+Role.create(name: 'client')
+user1 = User.create(email: 'admin@timelessapps.com',
+								    password: 'change_me',
+								    password_confirmation: 'change_me')
+user1.add_role(:admin)
+user2 = User.create(email: 'support@timelessapps.com',
+								    password: 'change_me',
+								    password_confirmation: 'change_me')
+user2.add_role(:client)
+
 Project.create!(
 	project_name: 'Project ID', 
 	description: ' ', 

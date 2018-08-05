@@ -18,7 +18,7 @@
 
         <li><%= link_to "Check Progress", projects_path %></li>
 
-        <li><%= link_to "User ", about_path, :class => "drop" %></a>
+        <li><%= link_to "User ", "#", :class => "drop" %></a>
           <ul>
             <% if user_signed_in? %>
               <li><%= link_to "Edit profile", edit_user_registration_path %></li>
