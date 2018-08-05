@@ -7,7 +7,7 @@
       <ul class="clear ta-pad-right">
         <li class="active"><%= link_to "Home", root_path %></li>
 
-        <li><%= link_to "About", about_path, :class => "drop" %></a>
+        <li><%= link_to "About ", about_path, :class => "drop" %></a>
           <ul>
             <li><a href="pages/gallery.html">Contact</a></li>
             <li><a href="pages/full-width.html">Resources</a></li>
@@ -18,6 +18,17 @@
         <li><%= link_to "Pricing", pricing_path %></li>
 
         <li><%= link_to "Check Progress", projects_path %></li>
+
+        <li><%= link_to "Profile ", about_path, :class => "drop" %></a>
+          <ul>
+            <li><%= link_to "Edit profile", edit_user_registration_path %></li>
+            <li><%= link_to "Sign up", new_user_registration_path %></li>
+            <li><%= link_to "Login", new_user_session_path %></li>
+            <li role="separator" class="divider"></li>
+            <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+          </ul>
+        </li>
+
       </ul>
     </nav>
   </header>
