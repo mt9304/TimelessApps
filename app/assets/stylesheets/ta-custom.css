@@ -198,3 +198,52 @@
 {
   overflow: auto;
 }
+
+/*Project table area */
+.ta-btn-info
+{
+	color: white;
+	background-color: #5bc0de;
+	border-color: #46b8da;
+	border-radius: 4px;
+	padding: 6px 12px;
+	margin-left: 10px;
+}
+
+.ta-btn-warning
+{
+	color: white;
+	background-color: #f0ad4e;
+	border-color: #eea236;;
+	border-radius: 4px;
+	padding: 6px 12px;
+	margin-left: 5px;
+}
+
+.ta-btn-danger
+{
+	color: white;
+	background-color: #d9534f;
+	border-color: #d43f3a;;
+	border-radius: 4px;
+	padding: 6px 12px;
+		margin-left: 5px;
+}
+
+table thead tr th.ta-description-box, table tbody tr td.ta-description-box
+{
+	text-align: left;
+}
+
+.ta-action-buttons
+{
+	text-align: center;
+	display: inline-block;
+	float: left;
+	overflow: scroll;
+}
+
+.ta-action-buttons-header
+{
+	min-width: 250px;
+}

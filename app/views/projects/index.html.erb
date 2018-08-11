@@ -22,9 +22,9 @@
       <thead>
         <tr>
           <th class="col-md-2">Name</th>
-               <th class="col-md-2">Description</th>
+               <th class="col-md-2 ta-description-box">Description</th>
    <th class="col-md-2">Creator</th>
-   <th class="col-md-4">Options</th>
+   <th class="col-md-4 ta-action-buttons-header">Options</th>
         </tr>
       </thead>
 
@@ -32,12 +32,12 @@
         <% @allProjects.each do |project| %>
           <tr>
            <td class="col-md-2"><%= project.project_name %></td>
-           <td class="col-md-2"><%= project.description %></td>
+           <td class="col-md-2 ta-description-box"><%= project.description %></td>
            <td class="col-md-2"><%= project.user.try(:email) %></td>
-           <td class="col-md-4">
-              <%= link_to 'Show', project_path(project), class: "btn btn-info" %>
-              <%= link_to 'Edit', edit_project_path(project), class: "btn  btn-warning" %>
-              <%= link_to 'Destroy', project_path(project), method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+           <td class="col-md-4 ta-action-buttons">
+              <%= link_to 'Show', project_path(project), class: "ta-btn-info" %>
+              <%= link_to 'Edit', edit_project_path(project), class: "ta-btn-warning" %>
+              <%= link_to 'Destroy', project_path(project), method: :delete, data: { confirm: 'Are you sure?' }, class: "ta-btn-danger" %>
            </td>
        </tr>
         <% end %>
