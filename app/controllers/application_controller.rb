@@ -1,8 +1,12 @@
 class ApplicationController < ActionController::Base
-  protect_from_forgery with: :exception
+	protect_from_forgery with: :exception
 
-  def home
-  	
-  end
+	rescue_from CanCan::AccessDenied do |exception|
+	  redirect_to root_url, alert: exception.message
+	end
+	
+	def home
+		
+	end
 
 end

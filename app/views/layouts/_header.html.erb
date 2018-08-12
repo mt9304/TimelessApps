@@ -7,17 +7,32 @@
       <ul class="clear ta-pad-right">
         <li class="active"><%= link_to "Home", root_path %></li>
 
-        <li><%= link_to "About", about_path, :class => "drop" %></a>
+        <li><%= link_to "About ", about_path, :class => "drop" %></a>
           <ul>
-            <li><a href="pages/gallery.html">Contact</a></li>
-            <li><a href="pages/full-width.html">Resources</a></li>
-            <li><a href="pages/sidebar-left.html">Careers</a></li>
+            <li><a href="/Contact">Contact</a></li>
+            <li><a href="/Resources">Resources</a></li>
           </ul>
         </li>
 
         <li><%= link_to "Pricing", pricing_path %></li>
 
         <li><%= link_to "Check Progress", projects_path %></li>
+
+        <li><%= link_to "User ", "#", :class => "drop" %></a>
+          <ul>
+            <% if user_signed_in? %>
+              <li><%= link_to "Edit profile", edit_user_registration_path %></li>
+            <% else %>
+              <li><%= link_to "Sign up", new_user_registration_path %></li>
+              <li><%= link_to "Login", new_user_session_path %></li>
+            <% end %>
+            <% if user_signed_in? %>
+            <li role="separator" class="divider"></li>
+              <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+            <% end %>
+          </ul>
+        </li>
+
       </ul>
     </nav>
   </header>

@@ -15,6 +15,38 @@
 <!--
 <%= link_to 'New Project', new_project_path %>
 -->
+<% if current_user && current_user.admin? %>
+  <h2>Project List</h2>
+  <div class="project-block">
+    <table class="table table-striped table-bordered table-hover">
+      <thead>
+        <tr>
+          <th class="col-md-2">Name</th>
+               <th class="col-md-2 ta-description-box">Description</th>
+   <th class="col-md-2">Creator</th>
+   <th class="col-md-4 ta-action-buttons-header">Options</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @allProjects.each do |project| %>
+          <tr>
+           <td class="col-md-2"><%= project.project_name %></td>
+           <td class="col-md-2 ta-description-box"><%= project.description %></td>
+           <td class="col-md-2"><%= project.user.try(:email) %></td>
+           <td class="col-md-4 ta-action-buttons">
+              <%= link_to 'Show', project_path(project), class: "ta-btn-info" %>
+              <%= link_to 'Edit', edit_project_path(project), class: "ta-btn-warning" %>
+              <%= link_to 'Destroy', project_path(project), method: :delete, data: { confirm: 'Are you sure?' }, class: "ta-btn-danger" %>
+           </td>
+       </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  <br>
+  <%= link_to 'New Project', new_project_path, class: "btn btn-primary" %>
+<% end %>
 
   <div class="ta-proj-header ta-fc-white">
     <h1><%= @projects.project_name %>

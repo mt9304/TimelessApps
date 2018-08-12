@@ -7,7 +7,18 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 #The default values that show on search page. 
-Project.create(
+Role.create(name: 'admin')
+Role.create(name: 'client')
+user1 = User.create(email: 'admin@timelessapps.com',
+								    password: 'change_me',
+								    password_confirmation: 'change_me')
+user1.add_role(:admin)
+user2 = User.create(email: 'support@timelessapps.com',
+								    password: 'change_me',
+								    password_confirmation: 'change_me')
+user2.add_role(:client)
+
+Project.create!(
 	project_name: 'Project ID', 
 	description: ' ', 
 	progress: 0, 
@@ -19,7 +30,7 @@ Project.create(
 	status: ' ', 
 	approved: 0)
 
-Project.create(
+Project.create!(
 	project_name: 'MT001', 
 	description: 'A small website for business information. ', 
 	progress: 0, 
@@ -31,7 +42,7 @@ Project.create(
 	status: 'Not Started', 
 	approved: 0)
 
-Project.create(
+Project.create!(
 	project_name: 'MT002', 
 	description: 'A custom feature to extend the website. ', 
 	progress: 25, 
@@ -43,7 +54,7 @@ Project.create(
 	status: 'In Progress', 
 	approved: 1)
 
-Project.create(
+Project.create!(
 	project_name: 'TA001', 
 	description: 'A custom desktop application. ', 
 	progress: 50, 
@@ -55,7 +66,7 @@ Project.create(
 	status: 'In Progress', 
 	approved: 1)
 
-Project.create(
+Project.create!(
 	project_name: 'MT003', 
 	description: 'Editing the content of a page. ', 
 	progress: 75, 
@@ -67,7 +78,7 @@ Project.create(
 	status: 'In Progress', 
 	approved: 1)
 
-Project.create(
+Project.create!(
 	project_name: 'TA002', 
 	description: 'A large website with custom functionality. ', 
 	progress: 100, 
@@ -79,7 +90,7 @@ Project.create(
 	status: 'Completed', 
 	approved: 1)
 
-Project.create(
+Project.create!(
 	project_name: 'Project Not Found', 
 	description: 'Sorry, it looks like this project does not exist in our records. If this is a mistake, or you have forgotten your Project ID, please contact support@timelessapps.com for assistance. ', 
 	progress: 0, 

@@ -9,6 +9,9 @@ gem 'jquery-rails', '4.1.1'
 gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.4.1'
 gem 'bootstrap-sass', '3.3.7'
+gem 'devise', '~> 4.4.3'
+gem 'cancancan', '~> 1.10'
+gem 'rolify', '~> 5.2.0'
 
 group :development, :test do
   #gem 'sqlite3'
