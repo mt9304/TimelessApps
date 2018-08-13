@@ -247,3 +247,84 @@ table thead tr th.ta-description-box, table tbody tr td.ta-description-box
 {
 	min-width: 250px;
 }
+
+/* Flash Messages */
+.alert-success
+{
+    background: #e6efc2;
+    color: #155724;
+    border-color: #c6d880;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 2px solid #ddd;
+}
+
+.alert-primary
+{
+	color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 2px solid #ddd;
+}
+
+.alert-secondary
+{
+	color: #383d41;
+    background-color: #e2e3e5;
+    border-color: #d6d8db;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 2px solid #ddd;
+}
+
+.alert-danger
+{
+	color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 2px solid #ddd;
+}
+
+.alert-warning
+{
+	color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 2px solid #ddd;
+}
+
+.alert-info
+{
+	color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 2px solid #ddd;
+}
+
+.alert-light
+{
+    color: #818182;
+    background-color: #fefefe;
+    border-color: #fdfdfe;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 2px solid #ddd;
+}
+
+.alert-dark
+{
+	color: #1b1e21;
+    background-color: #d6d8d9;
+    border-color: #c6c8ca;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 2px solid #ddd;
+}
