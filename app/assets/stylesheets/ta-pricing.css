@@ -131,3 +131,16 @@ body {
 		padding: 10px;
 		text-decoration: none;
 	}
+
+/* Custom ta */
+
+@media screen and (max-width: 980px) {
+    .ta-pricing-table-container {
+        display: table-cell; !important;
+    }
+}
+
+.ta-price-footer
+{
+	
+}
