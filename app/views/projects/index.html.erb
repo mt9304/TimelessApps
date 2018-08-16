@@ -97,8 +97,29 @@
       <thead>
         <div class="ta-table-header">
           <tr>
+            <th>Latest Update</th>
+            <th><%= @projects.last_updated %></th>
+          </tr>
+        </div>
+      </thead>
+
+      <div class="ta-slide-down">
+        <tbody>
+            <tr>
+              <td colspan="2"><%= @projects.progress_description %></td>
+            </tr>
+        </tbody>
+      </div>
+    </table>
+
+    <br>
+
+    <table class="ta-proj">
+      <thead>
+        <div class="ta-table-header">
+          <tr>
             <th>Details</th>
-            <th>></th>
+            <th></th>
           </tr>
         </div>
       </thead>
@@ -120,5 +141,6 @@
         </tbody>
       </div>
     </table>
+
   </div>
 </div>

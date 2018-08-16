@@ -1,6 +1,7 @@
 class ProjectsController < ApplicationController
   load_and_authorize_resource
   before_action :set_project, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:index, :show]
 
   # GET /projects
   # GET /projects.json
@@ -62,6 +63,6 @@ class ProjectsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def project_params
-      params.require(:project).permit(:project_name, :age)
+      params.require(:project).permit(:project_name, :description, :progess, :progress_description, :date_started, :last_updated, :eta, :project_type, :status, :approved)
     end
 end

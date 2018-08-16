@@ -1,0 +1,86 @@
+<%= form_for(@project) do |f| %>
+  <% if @project.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h2>
+      <ul>
+      <% @project.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="row">
+    <div class="form-group col-md-4">
+      <%= f.label :project_name %><br>
+      <%= f.text_field :project_name, class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group col-md-4">
+      <%= f.label :description %><br>
+      <%= f.text_field :description, class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group col-md-4">
+      <%= f.label :progress %><br>
+      <%= f.text_field :progress, class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group col-md-4">
+      <%= f.label :progress_description %><br>
+      <%= f.text_field :progress_description, class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group col-md-4">
+      <%= f.label :date_started %><br>
+      <%= f.text_field :date_started, class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group col-md-4">
+      <%= f.label :last_updated %><br>
+      <%= f.text_field :last_updated, class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group col-md-4">
+      <%= f.label :eta %><br>
+      <%= f.text_field :eta, class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group col-md-4">
+      <%= f.label :project_type %><br>
+      <%= f.text_field :project_type, class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group col-md-4">
+      <%= f.label :status %><br>
+      <%= f.text_field :status, class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group col-md-4">
+      <%= f.label :approved %><br>
+      <%= f.text_field :approved, class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="actions">
+    <%= f.submit 'Create', class: "btn btn-primary" %>
+  </div>
+<% end %>
