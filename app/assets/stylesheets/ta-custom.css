@@ -227,7 +227,17 @@
 	border-color: #d43f3a;;
 	border-radius: 4px;
 	padding: 6px 12px;
-		margin-left: 5px;
+	margin-left: 5px;
+}
+
+.ta-btn-default
+{
+	color: #333;
+	background-color: #fff;
+	border-color: #ccc;;
+	border-radius: 4px;
+	padding: 6px 12px;
+	margin-left: 5px;
 }
 
 table thead tr th.ta-description-box, table tbody tr td.ta-description-box

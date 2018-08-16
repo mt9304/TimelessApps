@@ -2,5 +2,7 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @project, class: "btn btn-warning" %>
-<%= link_to 'Back', projects_path, class: "btn btn-default" %>
+<br>
+<%= link_to 'Back', projects_path, class: "ta-btn-default" %>
+<%= link_to 'Show', @project, class: "ta-btn-info" %>
+<%= link_to 'Destroy', @project, method: :delete, data: { confirm: 'Are you sure?' }, class: "ta-btn-danger" %>
