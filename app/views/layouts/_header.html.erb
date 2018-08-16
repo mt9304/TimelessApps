@@ -5,10 +5,9 @@
     </div>
     <nav id="mainav" class="fl_right">
       <ul class="clear ta-pad-right">
-        <li class="active"><%= link_to "Home", root_path %></li>
-
-        <li><%= link_to "About ", about_path, :class => "drop" %></a>
+        <li class="active"><%= link_to "Home", root_path, :class => "drop" %></a>
           <ul>
+            <li><a href="/about">About</a></li>
             <li><a href="/Contact">Contact</a></li>
             <li><a href="/Resources">Resources</a></li>
           </ul>
@@ -27,7 +26,6 @@
               <li><%= link_to "Login", new_user_session_path %></li>
             <% end %>
             <% if user_signed_in? %>
-            <li role="separator" class="divider"></li>
               <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
             <% end %>
           </ul>
