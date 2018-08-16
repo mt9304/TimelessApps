@@ -23,6 +23,8 @@ body {
 	display: inline-block;
 	margin: 30px 10px;
 	width: 250px;
+	margin-left: 25px;
+	margin-right: 25px;
 }
 
 	.featured {
@@ -142,5 +144,5 @@ body {
 
 .ta-price-footer
 {
-	
+
 }
