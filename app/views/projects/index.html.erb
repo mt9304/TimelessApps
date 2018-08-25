@@ -51,17 +51,18 @@
 <% end %>
 
   <div class="ta-proj-header ta-fc-white">
-    <h1><%= @projects.project_name %>
+    <h1 class="ta-float-left"><%= @projects.project_name %>
     </h1>
-    <span id="ta-status">
+    <span id="ta-status" class="ta-float-right">
       <%= @projects.status %>
     </span>
-    <p>
+    <p class="ta-clear-both">
       <%= @projects.description %>
     </p>
+    <br>
   </div>
-  <div class="container ta-wrap ta-mid-scale">
-    <div class="ta-bar">
+  <div class="container ta-wrap ta-mid-scale ta-clear-both">
+    <div class="ta-bar ta-clear-both">
         <ul class="progressbar">
           <% if @projects.progress > 0 %>
             <li class="active" id="p0 step1"></li>
