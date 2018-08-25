@@ -402,6 +402,8 @@ input:-webkit-autofill {
 	margin-top: 5px;
 	background-color: CornFlowerBlue;
 	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	cursor: pointer;
+	cursor: hand;
 }
 
 .ta-cancel-account

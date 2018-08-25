@@ -1,5 +1,6 @@
 class ProjectsController < ApplicationController
   load_and_authorize_resource
+  #before_filter :sanitize_params
   before_action :set_project, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
 
@@ -27,7 +28,7 @@ class ProjectsController < ApplicationController
   # POST /projects
   # POST /projects.json
   def create
-    @project = Product.new(project_params)
+    @project = Project.new(project_params)
     @project.user = current_user
     if @project.save
       redirect_to @project, notice: 'Project was successfully created.'
@@ -56,6 +57,10 @@ class ProjectsController < ApplicationController
 
 
   private
+    def sanitize_params
+      project_params[:progress] = project_params[:progress].to_i
+    end
+
     # Use callbacks to share common setup or constraints between actions.
     def set_project
       @project = Project.find(params[:id])

@@ -5,9 +5,9 @@ class CreateProjects < ActiveRecord::Migration[5.0]
 	    	t.text :description
 	    	t.integer :progress
 	    	t.text :progress_description
-	    	t.string :date_started
+	    	t.datetime :date_started
 	    	t.datetime :last_updated
-	    	t.string :eta
+	    	t.datetime :eta
 	    	t.string :project_type
 	    	t.string :status
 	    	t.boolean :approved
