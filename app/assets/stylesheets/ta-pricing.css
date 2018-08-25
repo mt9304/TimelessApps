@@ -138,7 +138,7 @@ body {
 
 @media screen and (max-width: 980px) {
     .ta-pricing-table-container {
-        display: table-cell; !important;
+        display: table-cell !important;
     }
 }
 
