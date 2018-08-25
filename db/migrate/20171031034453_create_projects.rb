@@ -10,7 +10,7 @@ class CreateProjects < ActiveRecord::Migration[5.0]
 	    	t.string :eta
 	    	t.string :project_type
 	    	t.string :status
-	    	t.integer :approved
+	    	t.boolean :approved
 
 	    	t.timestamps
     	end

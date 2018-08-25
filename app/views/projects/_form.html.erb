@@ -20,63 +20,63 @@
   <div class="row">
     <div class="form-group col-md-4">
       <%= f.label :description %><br>
-      <%= f.text_field :description, class: "ta-session-input" %>
+      <%= f.text_area :description, class: "ta-session-input" %>
     </div>
   </div>
 
   <div class="row">
     <div class="form-group col-md-4">
       <%= f.label :progress %><br>
-      <%= f.text_field :progress, class: "ta-session-input" %>
+      <%= f.select :progress, [0,25,50,75,100], class: "ta-session-input" %>
     </div>
   </div>
 
   <div class="row">
     <div class="form-group col-md-4">
       <%= f.label :progress_description %><br>
-      <%= f.text_field :progress_description, class: "ta-session-input" %>
+      <%= f.text_area :progress_description, class: "ta-session-input" %>
     </div>
   </div>
 
   <div class="row">
     <div class="form-group col-md-4">
       <%= f.label :date_started %><br>
-      <%= f.text_field :date_started, class: "ta-session-input" %>
+      <%= f.date_field :date_started, class: "ta-session-input" %>
     </div>
   </div>
 
   <div class="row">
     <div class="form-group col-md-4">
       <%= f.label :last_updated %><br>
-      <%= f.text_field :last_updated, class: "ta-session-input" %>
+      <%= f.date_field :last_updated, class: "ta-session-input" %>
     </div>
   </div>
 
   <div class="row">
     <div class="form-group col-md-4">
       <%= f.label :eta %><br>
-      <%= f.text_field :eta, class: "ta-session-input" %>
+      <%= f.date_field :eta, class: "ta-session-input" %>
     </div>
   </div>
 
   <div class="row">
     <div class="form-group col-md-4">
       <%= f.label :project_type %><br>
-      <%= f.text_field :project_type, class: "ta-session-input" %>
+      <%= f.select :project_type, ['Landing Page','Web Application','Desktop Application','Custom Features','Maintenance','Other'],class: "ta-session-input" %>
     </div>
   </div>
 
   <div class="row">
     <div class="form-group col-md-4">
       <%= f.label :status %><br>
-      <%= f.text_field :status, class: "ta-session-input" %>
+      <%= f.select :status, ['Pending Approval','Assessing Project','Estimating Project','Filling Paperwork','Queued For Progress','In Progress','Testing','Finishing Up','Completed'],class: "ta-session-input" %>
     </div>
   </div>
 
   <div class="row">
     <div class="form-group col-md-4">
       <%= f.label :approved %><br>
-      <%= f.text_field :approved, class: "ta-session-input" %>
+      <%= f.check_box :approved, class: "ta-session-input" %>
     </div>
   </div>
 

@@ -39,7 +39,7 @@ Project.create!(
 	date_started: '2017-10-29 20:30:45', 
 	eta: '2017-11-29', 
 	project_type: 'Landing Page', 
-	status: 'Not Started', 
+	status: 'Queued For Progress', 
 	approved: 0)
 
 Project.create!(

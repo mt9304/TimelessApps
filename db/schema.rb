@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 20180805003234) do
     t.string   "eta"
     t.string   "project_type"
     t.string   "status"
-    t.integer  "approved"
+    t.boolean  "approved"
     t.datetime "created_at",           null: false
     t.datetime "updated_at",           null: false
     t.integer  "user_id"
