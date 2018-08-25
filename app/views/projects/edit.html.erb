@@ -1,8 +1,12 @@
-<h2>Editing Project</h2>
+<div class="ta-project-form-wrapper">
+	<h2>Editing Project</h2>
 
-<%= render 'form' %>
+	<%= render 'form' %>
 
-<br>
-<%= link_to 'Back', projects_path, class: "ta-btn-default" %>
-<%= link_to 'Show', @project, class: "ta-btn-info" %>
-<%= link_to 'Destroy', @project, method: :delete, data: { confirm: 'Are you sure?' }, class: "ta-btn-danger" %>
+	<br>
+	<div class="ta-action-buttons">
+		<%= link_to 'Back', projects_path, class: "ta-btn-default" %>
+		<%= link_to 'Show', @project, class: "ta-btn-info" %>
+		<%= link_to 'Destroy', @project, method: :delete, data: { confirm: 'Are you sure?' }, class: "ta-btn-danger" %>
+	</div>
+</div>

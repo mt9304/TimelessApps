@@ -1,27 +1,29 @@
 <%= flash_messages %>
-<h2>Project</h2>
+<div class="ta-project-form-wrapper">
+	<h2>Project</h2>
 
-<p>
-  <strong>Name:</strong>
-  <%= @project.project_name %>
-</p>
+	<p>
+	  <strong>Name:</strong>
+	  <%= @project.project_name %>
+	</p>
 
-<p>
-  <strong>Description:</strong>
-  	$<%= @project.description %>
-</p>
+	<p>
+	  <strong>Description:</strong>
+	  	$<%= @project.description %>
+	</p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @project.project_name %>
-</p>
+	<p>
+	  <strong>Name:</strong>
+	  <%= @project.project_name %>
+	</p>
 
-<p>
-  <strong>Description:</strong>
-  	$<%= @project.description %>
-</p>
+	<p>
+	  <strong>Description:</strong>
+	  	$<%= @project.description %>
+	</p>
 
 
-<br>
-<%= link_to 'Back', projects_path, class: "ta-btn-default" %>
-<%= link_to 'Edit', edit_project_path(@project), class: "ta-btn-warning" %>
+	<br>
+	<%= link_to 'Back', projects_path, class: "ta-btn-default" %>
+	<%= link_to 'Edit', edit_project_path(@project), class: "ta-btn-warning" %>
+</div>

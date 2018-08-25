@@ -10,77 +10,100 @@
     </div>
   <% end %>
 
-  <div class="row">
-    <div class="form-group col-md-4">
-      <%= f.label :project_name %><br>
-      <%= f.text_field :project_name, class: "ta-session-input" %>
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="form-group col-md-4">
-      <%= f.label :description %><br>
-      <%= f.text_area :description, class: "ta-session-input" %>
+  <div>
+    <div class="ta-form-input-top">
+      <div class="row">
+        <div class="ta-form-input ta-float-right">
+          <%= f.label :approved %><br>
+          <%= f.check_box :approved, class: "ta-session-input ta-float-right ta-check-box" %>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="row">
-    <div class="form-group col-md-4">
-      <%= f.label :progress %><br>
-      <%= f.select :progress, [0,25,50,75,100], class: "ta-session-input" %>
+    <hr>
+
+    <div class="ta-clear-both"></div>
+
+    <div class="ta-form-input-middle">
+      <div class="row">
+        <div class="ta-form-input ta-float-left">
+          <%= f.label :project_name %><br>
+          <%= f.text_field :project_name, class: "ta-session-input" %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="ta-form-input ta-float-right">
+          <%= f.label :date_started %><br>
+          <%= f.date_field :date_started, class: "ta-session-input" %>
+        </div>
+      </div>
+
+      <div class="ta-clear-both">
+        <div class="row">
+          <div class="ta-form-input ta-float-left">
+            <%= f.label :project_type %><br>
+            <%= f.select :project_type, ['Landing Page','Web Application','Desktop Application','Custom Features','Maintenance','Other'], {}, class: "ta-session-input ta-drop-down" %>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="ta-form-input ta-float-right">
+            <%= f.label :status %><br>
+            <%= f.select :status, ['Pending Approval','Assessing Project','Estimating Project','Filling Paperwork','Queued For Progress','In Progress','Testing','Finishing Up','Completed'], {}, class: "ta-session-input ta-drop-down" %>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="ta-form-input ta-clear-both">
+          <%= f.label :description %><br>
+          <%= f.text_area :description, class: "ta-session-input ta-text-area" %>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="row">
-    <div class="form-group col-md-4">
-      <%= f.label :progress_description %><br>
-      <%= f.text_area :progress_description, class: "ta-session-input" %>
+    <hr>
+
+    <div class="ta-form-input-bottom"> 
+        <div class="row">
+          <div class="ta-form-input ta-float-right">
+            <%= f.label :progress %><br>
+            <%= f.select :progress, [0,25,50,75,100], {}, class: "ta-session-input ta-drop-down" %>
+          </div>
+        </div>
+
+        <div class="ta-clear-both">
+          
+        </div>
+
+      <div class="ta-form-input">
+        <div class="row">
+          <div class="ta-form-input ta-float-left">
+            <%= f.label :last_updated %><br>
+            <%= f.date_field :last_updated, class: "ta-session-input" %>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="ta-form-input ta-float-right">
+            <%= f.label :eta %><br>
+            <%= f.date_field :eta, class: "ta-session-input" %>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="ta-form-input ta-clear-both">
+            <%= f.label :progress_description %><br>
+            <%= f.text_area :progress_description, class: "ta-session-input ta-text-area" %>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="row">
-    <div class="form-group col-md-4">
-      <%= f.label :date_started %><br>
-      <%= f.date_field :date_started, class: "ta-session-input" %>
+    <div class="actions">
+      <%= f.submit 'Create', class: "ta-login-btn" %>
     </div>
-  </div>
-
-  <div class="row">
-    <div class="form-group col-md-4">
-      <%= f.label :last_updated %><br>
-      <%= f.date_field :last_updated, class: "ta-session-input" %>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="form-group col-md-4">
-      <%= f.label :eta %><br>
-      <%= f.date_field :eta, class: "ta-session-input" %>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="form-group col-md-4">
-      <%= f.label :project_type %><br>
-      <%= f.select :project_type, ['Landing Page','Web Application','Desktop Application','Custom Features','Maintenance','Other'],class: "ta-session-input" %>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="form-group col-md-4">
-      <%= f.label :status %><br>
-      <%= f.select :status, ['Pending Approval','Assessing Project','Estimating Project','Filling Paperwork','Queued For Progress','In Progress','Testing','Finishing Up','Completed'],class: "ta-session-input" %>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="form-group col-md-4">
-      <%= f.label :approved %><br>
-      <%= f.check_box :approved, class: "ta-session-input" %>
-    </div>
-  </div>
-
-  <div class="actions">
-    <%= f.submit 'Create', class: "ta-login-btn" %>
   </div>
 <% end %>

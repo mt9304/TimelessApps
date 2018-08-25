@@ -141,3 +141,65 @@ tbody
   visibility: hidden;
 }
 
+/* For Project CRUD form pages */
+.ta-project-form-wrapper
+{
+  margin-top: 25px;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.ta-form-input-top
+{
+
+}
+
+.ta-form-input-middle
+{
+  margin-top: 25px;
+}
+
+.ta-form-input-bottom
+{
+  margin-top: 25px;
+}
+
+.ta-float-right
+{
+  float: right;
+}
+
+.ta-float-left
+{
+  float: left;
+}
+
+.ta-clear-both
+{
+  clear: both;
+}
+
+.ta-text-area
+{
+  width: 100%;
+  height: 150px;
+}
+
+.ta-check-box
+{
+  height: 30px;
+  width: 30px;
+}
+
+.ta-drop-down
+{
+  margin-top: -15px;
+  height: 30px;
+  width: 150px;
+}
+
+.ta-action-buttons
+{
+  margin-left: -5px;
+  margin-top: 15px;
+}
