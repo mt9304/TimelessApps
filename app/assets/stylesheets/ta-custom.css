@@ -155,9 +155,11 @@
 /* How it works section */
 .ta-section-black
 {
-	height: 400px;
+	min-height: 400px;
 	background-color: black;
 	padding: 50px;
+	width: 80%;
+	margin-left: 10%;
 }
 
 .ta-section-header
@@ -168,16 +170,15 @@
 
 .ta-section-paragraph
 {
-	margin-top: 25px;
+	margin-top: 35px;
 	color: white;
 	font-size: 16px;
-	float: left;
   	width: 150px;
-	height: 125px;
 	vertical-align: top;
 	display: inline-block;
 	*display: inline;
-	zoom: 1
+	zoom: 1;
+	text-align: center;
 }
 
 .ta-section-wrapper
@@ -185,6 +186,21 @@
 	text-align: justify;
 	-ms-text-justify: distribute-all-lines;
 	text-justify: distribute-all-lines;
+}
+
+.ta-step-icon
+{
+	margin: 0 auto;
+}
+
+.ta-section-paragraph-title
+{
+	margin-top: 15px;
+}
+
+.ta-section-paragraph-text
+{
+	margin-top: 15px;
 }
 
 .ta-margin-left
