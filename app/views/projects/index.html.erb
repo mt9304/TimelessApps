@@ -6,7 +6,7 @@
       <h3 class="font-x2 nospace ta-fc-white">Check Your Project's Progress</h3>
     </div>
   <form action="<%= projects_path %>" class="ta-center ta-search-space" method="get">
-    <%= text_field_tag :search, nil, placeholder: "Enter Project ID", class: "ta-search-bar ta-center ta-fc-grey" %>
+    <%= text_field_tag :search, nil, placeholder: "Enter Project ID (eg. TA001)", class: "ta-search-bar ta-center ta-fc-grey" %>
     <div class="ta-space"></div>
     <%= submit_tag 'Search', name: nil, class: "ta-btn-small"%>
   </form>
