@@ -93,36 +93,51 @@
   </main>
 </div>
 
-<div class="wrapper">
+<!--div class="wrapper"-->
   <!-- Testimony Section -->
-  <div class="split clear" style="background-image:url('/assets/bg2.jpg');">
+  <!--div class="split clear" style="background-image:url('/assets/bg2.jpg');">
     <section class="box"> 
       <div class="btmspace-50">
         <p class="nospace"><a href="#">Featured Testimony</a></p>
-        <h2 class="heading">A Fantastic Experience</h2>
+        <h2 class="heading">Quote</h2>
       </div>
       <div class="testimonial">
         <figure class="clear"><img src="images/demo/60x60.png" alt="">
-          <figcaption><strong>Sir Vinvyin</strong><br>
+          <figcaption><strong>Person</strong><br>
             <em>Professional Conman, Company Name</em></figcaption>
         </figure>
-        <p>"Say some nice things here. Preferably around 3 sentences long so it's not too short, but also not too long. Might just trail with ellipsis if too long... "</p>
+        <p>"Quote"</p>
       </div>
     </section>
   </div>
-</div>
-<div class="wrapper row3">
-  <div class="hoc container clear ta-fc-grey"> 
-    <div class="center btmspace-50">
-      <h3 class="font-x2 nospace">Check your progress</h3>
-      <p class="nospace">We keep track of the progress of all of our projects. Simply enter your project ID and search to check the progress. </p>
+</div-->
+
+  <div class="wrapper">
+    <!-- How it works section -->
+    <div class="ta-section-black">
+      <div class="ta-section-header">How It Works</div>
+      <div class="ta-section-wrapper">
+        <div class="ta-section-paragraph">1. Submit request. </div>
+        <div class="ta-section-paragraph ta-margin-left">1. Submit request. </div>
+        <div class="ta-section-paragraph ta-margin-left">1. Submit request. </div>
+        <div class="ta-section-paragraph ta-margin-left">1. Submit request. </div>
+        <span class="ta-stretch"></span>
+      </div>
     </div>
-    <div class="ta-search-space ta-search-wrap">
-      <input type="text" name="search" placeholder=" Enter Project ID" class="ta-center ta-search-bar">
-      <div class="ta-space"></div>
-      <div class="ta-btn-small">Search</div>
-    </div>
-    <div class="clear"></div>
   </div>
-</div>
+
+  <div class="wrapper row3">
+    <div class="hoc container clear ta-fc-grey"> 
+      <div class="center btmspace-50">
+        <h3 class="font-x2 nospace">Check your progress</h3>
+        <p class="nospace">We keep track of the progress of all of our projects. Simply enter your project ID and search to check the progress. </p>
+      </div>
+    <form action="<%= projects_path %>" class="ta-center ta-search-space" method="get">
+      <%= text_field_tag :search, nil, placeholder: "Enter Project ID (eg. TA001)", class: "ta-search-bar ta-center ta-fc-grey" %>
+      <div class="ta-space"></div>
+      <%= submit_tag 'Search', name: nil, class: "ta-btn-small"%>
+    </form>
+      <div class="clear"></div>
+    </div>
+  </div>
 </html>

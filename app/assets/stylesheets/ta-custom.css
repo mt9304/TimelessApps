@@ -152,6 +152,55 @@
 	min-width: 5px;
 }
 
+/* How it works section */
+.ta-section-black
+{
+	height: 400px;
+	background-color: black;
+	padding: 50px;
+}
+
+.ta-section-header
+{
+	color: white;
+	font-size: 24px;
+}
+
+.ta-section-paragraph
+{
+	margin-top: 25px;
+	color: white;
+	font-size: 16px;
+	float: left;
+  	width: 150px;
+	height: 125px;
+	vertical-align: top;
+	display: inline-block;
+	*display: inline;
+	zoom: 1
+}
+
+.ta-section-wrapper
+{
+	text-align: justify;
+	-ms-text-justify: distribute-all-lines;
+	text-justify: distribute-all-lines;
+}
+
+.ta-margin-left
+{
+	margin-left: 25px;
+}
+
+.ta-stretch
+{
+	width: 100%;
+	display: inline-block;
+	font-size: 0;
+	line-height: 0
+}
+
+
 /* Copyright Area */
 #copyright .ta-pad-left
 {

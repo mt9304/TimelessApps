@@ -11,6 +11,5 @@ Rails.application.routes.draw do
   get '/pricing', to: 'static_pages#pricing'
   get '/blankpage', to: 'static_pages#blankpage'
   get '/login' => redirect('/users/sign_in')
-  get '/users/new', to: 'users#new'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

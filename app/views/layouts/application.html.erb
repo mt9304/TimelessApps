@@ -9,9 +9,11 @@ Licence URI: http://www.os-templates.com/template-terms
 <html>
 <head>
     <title><%= full_title(yield(:title)) %></title>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <%= render 'layouts/rails_default' %>
     <%= render 'layouts/shim' %>
     <%= render 'layouts/javascripts' %>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <%= render 'layouts/google-analytics' %>
