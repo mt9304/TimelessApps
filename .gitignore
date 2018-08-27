@@ -4,3 +4,4 @@
 /tmp/*
 /log/*
 /db/test.sqlite3
+/shared/*
