@@ -52,7 +52,7 @@ Rails.application.configure do
     address: 'smtp.zoho.com',
     port: 465,
     user_name: 'support@timelessapps.com',
-    password: ENV['SMTP_PASSWORD'],
+    password: ENV['SMTP_PASS'],
     #password: '',
     authentication: 'login',
     ssl: true,
