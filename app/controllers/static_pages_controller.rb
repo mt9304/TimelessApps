@@ -13,4 +13,9 @@ class StaticPagesController < ApplicationController
 
   def blankpage
   end
+
+  def send_contact_email
+
+  end
+
 end
