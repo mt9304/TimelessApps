@@ -6,11 +6,15 @@
     <%= f.hidden_field :reset_password_token %>
 
     <div class="field">
-      <%= f.label :password, "New password" %><br />
+      <%= f.label :password %>
       <% if @minimum_password_length %>
-        <em>(<%= @minimum_password_length %> characters minimum)</em><br />
+        <% @password_length_placeholder = @minimum_password_length.to_s + " characters minimum" %>
+        <br />
+        <%= f.password_field :password, autocomplete: "off", placeholder: @password_length_placeholder, class: "ta-session-input" %>
+      <% else %>
+        <br />
+        <%= f.password_field :password, autocomplete: "off", class: "ta-session-input" %>
       <% end %>
-      <%= f.password_field :password, autofocus: true, autocomplete: "off", class: "ta-session-input" %>
     </div>
 
     <div class="field">

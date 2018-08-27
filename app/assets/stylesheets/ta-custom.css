@@ -94,6 +94,11 @@
 	}
 }
 
+.ta-bg-dark-grey
+{
+	background-color: #050505;
+}
+
 /*
 @media only screen and (min-width: 747px)
 {
