@@ -5,17 +5,20 @@
 #   gem 'sqlite3'
 #
 default: &default
-  adapter: sqlite3
+  adapter: postgresql
+  encoding: unicode
+  database: TimelessApps_def
   pool: 5
-  timeout: 5000
+  username: <%= ENV['TimelessApps_DATABASE_USER'] %>
+  password: <%= ENV['TimelessApps_DATABASE_PASSWORD'] %>
 
 development:
   adapter: postgresql
   encoding: unicode
-  database: tadev
+  database: TimelessApps_dev
   pool: 5
-  username: max
-  password: Master1
+  username: <%= ENV['TimelessApps_DATABASE_USER'] %>
+  password: <%= ENV['TimelessApps_DATABASE_PASSWORD'] %>
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -23,11 +26,15 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: tatest
+  database: TimelessApps_test
   pool: 5
-  username: max
-  password: Master1
+  username: <%= ENV['TimelessApps_DATABASE_USER'] %>
+  password: <%= ENV['TimelessApps_DATABASE_PASSWORD'] %>
 
 production:
-  <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  database: TimelessApps_prod
+  pool: 5
+  username: <%= ENV['TimelessApps_DATABASE_USER'] %>
+  password: <%= ENV['TimelessApps_DATABASE_PASSWORD'] %>
