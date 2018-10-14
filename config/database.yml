@@ -7,18 +7,18 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  database: TimelessApps_def
+  database: timelessapps_def
   pool: 5
-  username: <%= ENV['TimelessApps_DATABASE_USER'] %>
-  password: <%= ENV['TimelessApps_DATABASE_PASSWORD'] %>
+  username: <%= ENV['timelessapps_DATABASE_USER'] %>
+  password: <%= ENV['timelessapps_DATABASE_PASSWORD'] %>
 
 development:
   adapter: postgresql
   encoding: unicode
-  database: TimelessApps_dev
+  database: timelessapps_dev
   pool: 5
-  username: <%= ENV['TimelessApps_DATABASE_USER'] %>
-  password: <%= ENV['TimelessApps_DATABASE_PASSWORD'] %>
+  username: <%= ENV['timelessapps_DATABASE_USER'] %>
+  password: <%= ENV['timelessapps_DATABASE_PASSWORD'] %>
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -26,15 +26,15 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: TimelessApps_test
+  database: timelessapps_test
   pool: 5
-  username: <%= ENV['TimelessApps_DATABASE_USER'] %>
-  password: <%= ENV['TimelessApps_DATABASE_PASSWORD'] %>
+  username: <%= ENV['timelessapps_DATABASE_USER'] %>
+  password: <%= ENV['timelessapps_DATABASE_PASSWORD'] %>
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: TimelessApps_prod
+  database: timelessapps_prod
   pool: 5
-  username: <%= ENV['TimelessApps_DATABASE_USER'] %>
-  password: <%= ENV['TimelessApps_DATABASE_PASSWORD'] %>
+  username: <%= ENV['timelessapps_DATABASE_USER'] %>
+  password: <%= ENV['timelessapps_DATABASE_PASSWORD'] %>
