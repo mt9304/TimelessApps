@@ -19,7 +19,7 @@ This is an experimental website I created to see how a web application works fro
 3. PostgreSQL
 
 ### Installation
-#### Automated full installation on a brand new server
+#### Automated full production installation on a brand new server
 
 1. Start up a new Ubuntu 18.04 server or VM (16.04 will run into a few hiccups, but the application works fine)
 2. Install curl: 
