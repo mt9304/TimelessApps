@@ -34,7 +34,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: timelessapps_prod
+  database: TimelessApps_prod
   pool: 5
   username: <%= ENV['timelessapps_DATABASE_USER'] %>
   password: <%= ENV['timelessapps_DATABASE_PASSWORD'] %>
