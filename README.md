@@ -8,7 +8,7 @@
 
 ## Introduction
 
-This is an experimental website I created to see how a web application works from the beginning (as a simple CRUD app) to the end (deploying on a web server and monitoring traffic). I will be extending on this in the future to explore different workflows and processes for delivering projects. 
+This is a web application I created to experiment with website monitoring and deployment workflows. This application itself also manages projects to keep track of progress and deadlines. 
 
 ## Prerequisites
 
